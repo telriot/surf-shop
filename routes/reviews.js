@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router({ mergeParams: true});
+const router = express.Router({ mergeParams: true });
 
 /* GET reviews index /posts/id:/reviews */
 router.get('/', (req, res, next) => {
