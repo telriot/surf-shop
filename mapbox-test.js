@@ -6,8 +6,8 @@ async function geocoder(location){
     try {
         let response = await geocodingClient
     .forwardGeocode({
-      query: location,
-      limit: 2
+      query: req.body.post.location,
+      limit: 1
     })
     .send();
     console.log(response.body.features[0].geometry.coordinates)
